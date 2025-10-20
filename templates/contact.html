@@ -1,0 +1,148 @@
+{% extends "layout.html" %}
+
+{% block title %}Contact - {{ personal.name }}{% endblock %}
+
+{% block content %}
+<!-- Contact Header -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h1 class="mb-4" data-animate="fade-in">Get in <span class="text-gradient">Touch</span></h1>
+                <p class="lead mb-5" data-animate="fade-in">Have a question or want to work together? Send me a message!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section class="py-3">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8" data-animate="slide-up">
+                <div class="contact-form">
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="mb-4">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                            <div class="invalid-feedback">
+                                Please enter your name.
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="your.email@example.com" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                            <div class="invalid-feedback">
+                                Please enter your message.
+                            </div>
+                        </div>
+                        
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary" id="submitButton">
+                                <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true" id="loadingSpinner"></span>
+                                <span id="submitText">Send Message</span>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <!-- Success Message -->
+                    <div class="form-message success d-none" id="successMessage">
+                        <i class="fas fa-check-circle me-2"></i> Thank you for your message! I'll reach out soon!
+                    </div>
+                    
+                    <!-- Error Message -->
+                    <div class="form-message error d-none" id="errorMessage">
+                        <i class="fas fa-exclamation-circle me-2"></i> <span id="errorText">Something went wrong. Please try again.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Info -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4" data-animate="scale-in">
+                        <div class="p-4 bg-black rounded-3 h-100">
+                            <i class="fas fa-envelope text-primary mb-3" style="font-size: 2rem;"></i>
+                            <h3 class="h5 mb-3">Email</h3>
+                            <p><a href="mailto:{{ personal.email }}" class="text-decoration-none">{{ personal.email }}</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4" data-animate="scale-in">
+                        <div class="p-4 bg-black rounded-3 h-100">
+                            <i class="fab fa-github text-primary mb-3" style="font-size: 2rem;"></i>
+                            <h3 class="h5 mb-3">GitHub</h3>
+                            <p><a href="{{ personal.github }}" target="_blank" class="text-decoration-none">{{ personal.github.split('//')[1] }}</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4" data-animate="scale-in">
+                        <div class="p-4 bg-black rounded-3 h-100">
+                            <i class="fab fa-linkedin text-primary mb-3" style="font-size: 2rem;"></i>
+                            <h3 class="h5 mb-3">LinkedIn</h3>
+                            <p><a href="{{ personal.linkedin }}" target="_blank" class="text-decoration-none">{{ personal.linkedin.split('//')[1] }}</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Availability Section -->
+<section class="py-5 bg-black">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="mb-4" data-animate="fade-in">Currently <span class="text-gradient">Available</span> For</h2>
+                <div class="row mt-5">
+                    <div class="col-md-4 mb-4" data-animate="scale-in">
+                        <div class="p-4 bg-darker rounded-3 h-100">
+                            <i class="fas fa-laptop-code text-primary mb-3" style="font-size: 2rem;"></i>
+                            <h3 class="h4 mb-3">Freelance Projects</h3>
+                            <p>Custom AI solutions and data science consulting.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4" data-animate="scale-in">
+                        <div class="p-4 bg-darker rounded-3 h-100">
+                            <i class="fas fa-users text-primary mb-3" style="font-size: 2rem;"></i>
+                            <h3 class="h4 mb-3">Collaboration</h3>
+                            <p>Research partnerships and open-source contributions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4" data-animate="scale-in">
+                        <div class="p-4 bg-darker rounded-3 h-100">
+                            <i class="fas fa-chalkboard-teacher text-primary mb-3" style="font-size: 2rem;"></i>
+                            <h3 class="h4 mb-3">Mentoring</h3>
+                            <p>Guidance for aspiring data scientists and AI engineers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Contact form handling is in main.js
+</script>
+{% endblock %}

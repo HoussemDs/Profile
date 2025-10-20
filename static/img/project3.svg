@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FFFF" />
+      <stop offset="100%" stop-color="#9D4EDD" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#121212" />
+  
+  <!-- Grid Lines -->
+  <g stroke="rgba(255, 255, 255, 0.1)" stroke-width="1">
+    <!-- Horizontal Lines -->
+    <line x1="0" y1="50" x2="800" y2="50" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="250" x2="800" y2="250" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="350" x2="800" y2="350" />
+  </g>
+  
+  <!-- NLP Text Classification Visualization -->
+  <!-- Main Container -->
+  <rect x="100" y="80" width="600" height="260" fill="#1E1E1E" rx="10" ry="10" stroke="url(#gradient)" stroke-width="2" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="'Roboto Mono', monospace" font-size="24" fill="white" text-anchor="middle">NLP Text Classification System</text>
+  
+  <!-- Input Text -->
+  <g transform="translate(120, 100)">
+    <text font-family="'Roboto Mono', monospace" font-size="12" fill="white">Input Text:</text>
+    <rect x="0" y="10" width="560" height="60" fill="#2A2A2A" rx="5" ry="5" />
+    <text x="10" y="30" font-family="'Roboto Mono', monospace" font-size="10" fill="white" width="540">
+      The new machine learning model demonstrates significant improvements
+    </text>
+    <text x="10" y="45" font-family="'Roboto Mono', monospace" font-size="10" fill="white" width="540">
+      in natural language understanding compared to previous approaches,
+    </text>
+    <text x="10" y="60" font-family="'Roboto Mono', monospace" font-size="10" fill="white" width="540">
+      particularly in sentiment analysis and entity recognition tasks.
+    </text>
+  </g>
+  
+  <!-- Transformer Architecture (Simplified) -->
+  <g transform="translate(150, 180)">
+    <!-- Transformer Blocks -->
+    <rect x="0" y="0" width="500" height="60" fill="#2A2A2A" rx="5" ry="5" />
+    
+    <!-- Attention Heads -->
+    <g transform="translate(20, 15)">
+      <rect width="80" height="30" fill="rgba(0, 255, 255, 0.2)" rx="3" ry="3" stroke="#00FFFF" stroke-width="1" />
+      <text x="40" y="20" font-family="'Roboto Mono', monospace" font-size="8" fill="white" text-anchor="middle">Self-Attention</text>
+    </g>
+    
+    <g transform="translate(120, 15)">
+      <rect width="80" height="30" fill="rgba(0, 255, 255, 0.2)" rx="3" ry="3" stroke="#00FFFF" stroke-width="1" />
+      <text x="40" y="20" font-family="'Roboto Mono', monospace" font-size="8" fill="white" text-anchor="middle">Self-Attention</text>
+    </g>
+    
+    <g transform="translate(220, 15)">
+      <rect width="80" height="30" fill="rgba(0, 255, 255, 0.2)" rx="3" ry="3" stroke="#00FFFF" stroke-width="1" />
+      <text x="40" y="20" font-family="'Roboto Mono', monospace" font-size="8" fill="white" text-anchor="middle">Feed Forward</text>
+    </g>
+    
+    <g transform="translate(320, 15)">
+      <rect width="80" height="30" fill="rgba(157, 78, 221, 0.2)" rx="3" ry="3" stroke="#9D4EDD" stroke-width="1" />
+      <text x="40" y="20" font-family="'Roboto Mono', monospace" font-size="8" fill="white" text-anchor="middle">Classification</text>
+    </g>
+    
+    <g transform="translate(420, 15)">
+      <rect width="60" height="30" fill="rgba(157, 78, 221, 0.2)" rx="3" ry="3" stroke="#9D4EDD" stroke-width="1" />
+      <text x="30" y="20" font-family="'Roboto Mono', monospace" font-size="8" fill="white" text-anchor="middle">Output</text>
+    </g>
+    
+    <!-- Connecting Arrows -->
+    <line x1="100" y1="30" x2="120" y2="30" stroke="white" stroke-width="1" />
+    <line x1="200" y1="30" x2="220" y2="30" stroke="white" stroke-width="1" />
+    <line x1="300" y1="30" x2="320" y2="30" stroke="white" stroke-width="1" />
+    <line x1="400" y1="30" x2="420" y2="30" stroke="white" stroke-width="1" />
+  </g>
+  
+  <!-- Classification Results -->
+  <g transform="translate(120, 260)">
+    <text font-family="'Roboto Mono', monospace" font-size="12" fill="white">Classification Results:</text>
+    
+    <!-- Categories -->
+    <g transform="translate(20, 20)">
+      <rect width="120" height="20" fill="rgba(0, 255, 255, 0.7)" rx="3" ry="3" />
+      <text x="60" y="15" font-family="'Roboto Mono', monospace" font-size="10" fill="black" text-anchor="middle">Technology (87%)</text>
+    </g>
+    
+    <g transform="translate(160, 20)">
+      <rect width="120" height="20" fill="rgba(157, 78, 221, 0.7)" rx="3" ry="3" />
+      <text x="60" y="15" font-family="'Roboto Mono', monospace" font-size="10" fill="black" text-anchor="middle">Science (62%)</text>
+    </g>
+    
+    <g transform="translate(300, 20)">
+      <rect width="120" height="20" fill="rgba(255, 255, 255, 0.3)" rx="3" ry="3" />
+      <text x="60" y="15" font-family="'Roboto Mono', monospace" font-size="10" fill="black" text-anchor="middle">Business (31%)</text>
+    </g>
+    
+    <g transform="translate(440, 20)">
+      <rect width="120" height="20" fill="rgba(255, 255, 255, 0.2)" rx="3" ry="3" />
+      <text x="60" y="15" font-family="'Roboto Mono', monospace" font-size="10" fill="black" text-anchor="middle">Other (12%)</text>
+    </g>
+  </g>
+  
+  <!-- Tokens Visualization -->
+  <g transform="translate(120, 310)">
+    <text font-family="'Roboto Mono', monospace" font-size="10" fill="white">Tokens:</text>
+    
+    <g transform="translate(70, 0)">
+      <rect width="60" height="15" fill="rgba(0, 255, 255, 0.3)" rx="2" ry="2" stroke="#00FFFF" stroke-width="1" />
+      <text x="30" y="12" font-family="'Roboto Mono', monospace" font-size="8" fill="white" text-anchor="middle">machine</text>
+    </g>
+    
+    <g transform="translate(140, 0)">
+      <rect width="60" height="15" fill="rgba(0, 255, 255, 0.3)" rx="2" ry="2" stroke="#00FFFF" stroke-width="1" />
+      <text x="30" y="12" font-family="'Roboto Mono', monospace" font-size="8" fill="white" text-anchor="middle">learning</text>
+    </g>
+    
+    <g transform="translate(210, 0)">
+      <rect width="60" height="15" fill="rgba(157, 78, 221, 0.3)" rx="2" ry="2" stroke="#9D4EDD" stroke-width="1" />
+      <text x="30" y="12" font-family="'Roboto Mono', monospace" font-size="8" fill="white" text-anchor="middle">natural</text>
+    </g>
+    
+    <g transform="translate(280, 0)">
+      <rect width="60" height="15" fill="rgba(157, 78, 221, 0.3)" rx="2" ry="2" stroke="#9D4EDD" stroke-width="1" />
+      <text x="30" y="12" font-family="'Roboto Mono', monospace" font-size="8" fill="white" text-anchor="middle">language</text>
+    </g>
+    
+    <g transform="translate(350, 0)">
+      <rect width="60" height="15" fill="rgba(255, 255, 255, 0.2)" rx="2" ry="2" stroke="white" stroke-width="1" />
+      <text x="30" y="12" font-family="'Roboto Mono', monospace" font-size="8" fill="white" text-anchor="middle">sentiment</text>
+    </g>
+    
+    <g transform="translate(420, 0)">
+      <rect width="60" height="15" fill="rgba(255, 255, 255, 0.2)" rx="2" ry="2" stroke="white" stroke-width="1" />
+      <text x="30" y="12" font-family="'Roboto Mono', monospace" font-size="8" fill="white" text-anchor="middle">entity</text>
+    </g>
+    
+    <g transform="translate(490, 0)">
+      <rect width="60" height="15" fill="rgba(255, 255, 255, 0.2)" rx="2" ry="2" stroke="white" stroke-width="1" />
+      <text x="30" y="12" font-family="'Roboto Mono', monospace" font-size="8" fill="white" text-anchor="middle">recognition</text>
+    </g>
+  </g>
+</svg>

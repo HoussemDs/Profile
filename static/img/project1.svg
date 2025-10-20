@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FFFF" />
+      <stop offset="100%" stop-color="#9D4EDD" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#121212" />
+  
+  <!-- Grid Lines -->
+  <g stroke="rgba(255, 255, 255, 0.1)" stroke-width="1">
+    <!-- Horizontal Lines -->
+    <line x1="0" y1="50" x2="800" y2="50" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="250" x2="800" y2="250" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="350" x2="800" y2="350" />
+    
+    <!-- Vertical Lines -->
+    <line x1="100" y1="0" x2="100" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="400" />
+    <line x1="300" y1="0" x2="300" y2="400" />
+    <line x1="400" y1="0" x2="400" y2="400" />
+    <line x1="500" y1="0" x2="500" y2="400" />
+    <line x1="600" y1="0" x2="600" y2="400" />
+    <line x1="700" y1="0" x2="700" y2="400" />
+  </g>
+  
+  <!-- Neural Network Visualization -->
+  <!-- Input Layer -->
+  <g fill="#121212" stroke="url(#gradient)" stroke-width="2">
+    <circle cx="200" cy="100" r="20" />
+    <circle cx="200" cy="200" r="20" />
+    <circle cx="200" cy="300" r="20" />
+  </g>
+  
+  <!-- Hidden Layer 1 -->
+  <g fill="#121212" stroke="url(#gradient)" stroke-width="2">
+    <circle cx="400" cy="80" r="20" />
+    <circle cx="400" cy="160" r="20" />
+    <circle cx="400" cy="240" r="20" />
+    <circle cx="400" cy="320" r="20" />
+  </g>
+  
+  <!-- Output Layer -->
+  <g fill="#121212" stroke="url(#gradient)" stroke-width="2">
+    <circle cx="600" cy="150" r="20" />
+    <circle cx="600" cy="250" r="20" />
+  </g>
+  
+  <!-- Connections -->
+  <g stroke="rgba(0, 255, 255, 0.4)" stroke-width="1.5">
+    <!-- Input to Hidden -->
+    <line x1="200" y1="100" x2="400" y2="80" />
+    <line x1="200" y1="100" x2="400" y2="160" />
+    <line x1="200" y1="100" x2="400" y2="240" />
+    <line x1="200" y1="100" x2="400" y2="320" />
+    
+    <line x1="200" y1="200" x2="400" y2="80" />
+    <line x1="200" y1="200" x2="400" y2="160" />
+    <line x1="200" y1="200" x2="400" y2="240" />
+    <line x1="200" y1="200" x2="400" y2="320" />
+    
+    <line x1="200" y1="300" x2="400" y2="80" />
+    <line x1="200" y1="300" x2="400" y2="160" />
+    <line x1="200" y1="300" x2="400" y2="240" />
+    <line x1="200" y1="300" x2="400" y2="320" />
+    
+    <!-- Hidden to Output -->
+    <line x1="400" y1="80" x2="600" y2="150" />
+    <line x1="400" y1="80" x2="600" y2="250" />
+    
+    <line x1="400" y1="160" x2="600" y2="150" />
+    <line x1="400" y1="160" x2="600" y2="250" />
+    
+    <line x1="400" y1="240" x2="600" y2="150" />
+    <line x1="400" y1="240" x2="600" y2="250" />
+    
+    <line x1="400" y1="320" x2="600" y2="150" />
+    <line x1="400" y1="320" x2="600" y2="250" />
+  </g>
+  
+  <!-- Project Title -->
+  <text x="400" y="40" font-family="'Roboto Mono', monospace" font-size="24" fill="white" text-anchor="middle">AI Image Classification Model</text>
+  
+  <!-- Decorative Elements -->
+  <rect x="50" y="50" width="700" height="300" fill="none" stroke="url(#gradient)" stroke-width="2" rx="10" ry="10" />
+  
+  <!-- Image Icons -->
+  <g fill="rgba(157, 78, 221, 0.7)">
+    <rect x="120" y="100" width="30" height="30" rx="5" ry="5" />
+    <rect x="120" y="200" width="30" height="30" rx="5" ry="5" />
+    <rect x="120" y="300" width="30" height="30" rx="5" ry="5" />
+  </g>
+  
+  <!-- Output Labels -->
+  <g font-family="'Roboto Mono', monospace" font-size="14" fill="white">
+    <text x="650" y="155" text-anchor="start">Cat</text>
+    <text x="650" y="255" text-anchor="start">Dog</text>
+  </g>
+</svg>

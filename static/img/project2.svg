@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FFFF" />
+      <stop offset="100%" stop-color="#9D4EDD" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#121212" />
+  
+  <!-- Grid Lines -->
+  <g stroke="rgba(255, 255, 255, 0.1)" stroke-width="1">
+    <!-- Horizontal Lines -->
+    <line x1="0" y1="50" x2="800" y2="50" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="250" x2="800" y2="250" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="350" x2="800" y2="350" />
+  </g>
+  
+  <!-- Dashboard Elements -->
+  <!-- Main Dashboard Container -->
+  <rect x="100" y="80" width="600" height="260" fill="#1E1E1E" rx="10" ry="10" stroke="url(#gradient)" stroke-width="2" />
+  
+  <!-- Chart 1: Line Chart -->
+  <g transform="translate(150, 120)">
+    <rect width="200" height="120" fill="#2A2A2A" rx="5" ry="5" />
+    
+    <!-- Chart Title -->
+    <text x="10" y="20" font-family="'Roboto Mono', monospace" font-size="12" fill="white">Time Series Data</text>
+    
+    <!-- Line Chart -->
+    <polyline points="10,90 30,70 50,80 70,40 90,60 110,30 130,50 150,20 170,40 190,30" 
+              fill="none" stroke="url(#gradient)" stroke-width="2" />
+    
+    <!-- Data Points -->
+    <circle cx="10" cy="90" r="3" fill="#00FFFF" />
+    <circle cx="30" cy="70" r="3" fill="#00FFFF" />
+    <circle cx="50" cy="80" r="3" fill="#00FFFF" />
+    <circle cx="70" cy="40" r="3" fill="#00FFFF" />
+    <circle cx="90" cy="60" r="3" fill="#00FFFF" />
+    <circle cx="110" cy="30" r="3" fill="#00FFFF" />
+    <circle cx="130" cy="50" r="3" fill="#00FFFF" />
+    <circle cx="150" cy="20" r="3" fill="#00FFFF" />
+    <circle cx="170" cy="40" r="3" fill="#00FFFF" />
+    <circle cx="190" cy="30" r="3" fill="#00FFFF" />
+  </g>
+  
+  <!-- Chart 2: Bar Chart -->
+  <g transform="translate(450, 120)">
+    <rect width="200" height="120" fill="#2A2A2A" rx="5" ry="5" />
+    
+    <!-- Chart Title -->
+    <text x="10" y="20" font-family="'Roboto Mono', monospace" font-size="12" fill="white">Category Distribution</text>
+    
+    <!-- Bar Chart -->
+    <rect x="20" y="40" width="20" height="60" fill="rgba(0, 255, 255, 0.7)" />
+    <rect x="60" y="30" width="20" height="70" fill="rgba(0, 255, 255, 0.7)" />
+    <rect x="100" y="50" width="20" height="50" fill="rgba(0, 255, 255, 0.7)" />
+    <rect x="140" y="35" width="20" height="65" fill="rgba(0, 255, 255, 0.7)" />
+    <rect x="180" y="60" width="20" height="40" fill="rgba(0, 255, 255, 0.7)" />
+  </g>
+  
+  <!-- Chart 3: Pie Chart -->
+  <g transform="translate(150, 260)">
+    <rect width="200" height="60" fill="#2A2A2A" rx="5" ry="5" />
+    
+    <!-- Chart Title -->
+    <text x="10" y="20" font-family="'Roboto Mono', monospace" font-size="12" fill="white">Distribution</text>
+    
+    <!-- Pie Chart (simplified) -->
+    <circle cx="160" cy="30" r="20" fill="none" stroke="white" stroke-width="1" />
+    <path d="M160,30 L160,10 A20,20 0 0,1 178,37 z" fill="rgba(0, 255, 255, 0.7)" />
+    <path d="M160,30 L178,37 A20,20 0 0,1 142,37 z" fill="rgba(157, 78, 221, 0.7)" />
+    <path d="M160,30 L142,37 A20,20 0 0,1 160,10 z" fill="rgba(255, 255, 255, 0.3)" />
+  </g>
+  
+  <!-- Chart 4: Metrics -->
+  <g transform="translate(450, 260)">
+    <rect width="200" height="60" fill="#2A2A2A" rx="5" ry="5" />
+    
+    <!-- Metrics Title -->
+    <text x="10" y="20" font-family="'Roboto Mono', monospace" font-size="12" fill="white">Key Metrics</text>
+    
+    <!-- Metric Values -->
+    <text x="20" y="40" font-family="'Roboto Mono', monospace" font-size="10" fill="white">Accuracy: 94.2%</text>
+    <text x="120" y="40" font-family="'Roboto Mono', monospace" font-size="10" fill="white">Recall: 91.7%</text>
+  </g>
+  
+  <!-- Dashboard Header -->
+  <text x="400" y="40" font-family="'Roboto Mono', monospace" font-size="24" fill="white" text-anchor="middle">Interactive Data Visualization Dashboard</text>
+  
+  <!-- Controls -->
+  <g transform="translate(100, 350)">
+    <rect width="600" height="30" fill="#2A2A2A" rx="5" ry="5" />
+    
+    <!-- Buttons -->
+    <rect x="20" y="5" width="80" height="20" fill="rgba(0, 255, 255, 0.7)" rx="3" ry="3" />
+    <text x="60" y="19" font-family="'Roboto Mono', monospace" font-size="10" fill="black" text-anchor="middle">Filter</text>
+    
+    <rect x="120" y="5" width="80" height="20" fill="rgba(157, 78, 221, 0.7)" rx="3" ry="3" />
+    <text x="160" y="19" font-family="'Roboto Mono', monospace" font-size="10" fill="black" text-anchor="middle">Export</text>
+    
+    <!-- Slider -->
+    <line x1="220" y1="15" x2="580" y2="15" stroke="white" stroke-width="2" />
+    <circle cx="350" cy="15" r="8" fill="url(#gradient)" />
+  </g>
+</svg>

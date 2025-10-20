@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "title": "Satellite Image Segmentation",
+        "description": "Engineered a high-performance semantic segmentation model (U-Net, 92% IoU) for satellite and drone imagery, automating terrain classification and enabling smart logistics at CMA CGM. Used PyTorch and MONAI frameworks with advanced data augmentation techniques.",
+        "image": "img/project1.svg",
+        "tags": ["Geospatial AI", "PyTorch", "MONAI", "U-Net", "Semantic Segmentation"],
+        "github_url": "https://github.com/celiamarrakchi/wheat_AI_Project",
+        "demo_url": "https://www.linkedin.com/feed/update/urn:li:activity:7330128835335663617",
+        "youtube_id": "",
+        "role": "Geospatial AI Engineer at CMA CGM, France"
+    },
+    {
+        "id": 2,
+        "title": "Multi-Agent Doctor Assistant",
+        "description": "Developed an intelligent multi-agent system for patient triage and medical support. Built with LangChain and CrewAI, integrating diagnostic logic for multiple patient categories.",
+        "image": "img/project2.svg",
+        "tags": ["LangChain", "CrewAI", "Medical AI", "Multi-Agent Systems", "LLMs"],
+        "github_url": "https://github.com/HoussemDs/Multi_Agent_doctor_Assitant",
+        "demo_url": "",
+        "youtube_id": "",
+        "role": "Medical AI Engineer Intern at Alight, Germany",
+        "diagram": "graph TD  \n        A[Patient Data Input] --> B[Data Processor] \n        B --> C{Patient Category} \n        C -->|Normal| D[Normal Patient Agent] \n        C -->|Sick| E[Sick Patient Agent] \n        C -->|Cardiac| F[Heart Patient Agent] \n        D -->|No Doctor Needed| G[Generate Health Report] \n        E -->|Doctor Needed?| H{Requires Doctor?} \n        F -->|Always to Doctor| I[Consult Cardiologist] \n        H -->|No| J[Generate Care Recommendations] \n        H -->|Yes| K[Consult Primary Doctor] \n        I --> L[Generate Treatment Plan] \n        K --> M[Generate Treatment Plan] \n        L --> N[Generate Cardiac Care Plan] \n        G --> O[Final Patient Report] \n        J --> O \n        M --> O \n        N --> O"
+    },
+    {
+        "id": 3,
+        "title": "Supply Chain Automation",
+        "description": "Implemented forecasting models and automated supply chain processes at Newrest, Tunisia. Developed Python-based tools for inventory optimization and demand prediction, resulting in significant cost savings and improved operational efficiency.",
+        "image": "img/project3.svg",
+        "tags": ["Forecasting", "Supply Chain", "Python", "Automation", "Data Analysis"],
+        "github_url": "https://github.com/HoussemDs",
+        "demo_url": "",
+        "youtube_id": "",
+        "role": "Data Analyst – Forecasting & Supply Chain Automation, Newrest, Tunisia"
+    }
+]
