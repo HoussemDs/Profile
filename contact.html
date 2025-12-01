@@ -12,7 +12,7 @@
     <meta property="og:description" content="AI Engineer specializing in medical imaging, geospatial intelligence, and agentic AI. Experienced in building and deploying real-world systems with Python, PyTorch, MONAI, LangChain, and LangGraph.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
-    <meta property="og:image" content="static/img/profile.jpg">
+    <meta property="og:image" content="static/img/me/Profile_Picture.jpeg">
     
     <title>Contact - Houssem Eddine</title>
     
@@ -62,6 +62,15 @@
                         <a href="https://github.com/HoussemDs" target="_blank" class="nav-icon me-3"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/houssemeddineds/" target="_blank" class="nav-icon"><i class="fab fa-linkedin"></i></a>
                     </li>
+                    <li class="nav-item dropdown ms-lg-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="resumeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resume
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end bg-darker text-light" aria-labelledby="resumeDropdown">
+                            <li><a class="dropdown-item text-light" href="static/HoussemEddineDs_MLEngineer_Resume.pdf" target="_blank">View Resume</a></li>
+                            <li><a class="dropdown-item text-light" href="static/HoussemEddineDs_MLEngineer_Resume.pdf" download>Download Resume</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -81,92 +90,40 @@
             </div>
         </section>
 
-        <!-- Contact Form and Info -->
-        <section class="py-3">
+        <!-- Contact Info Only -->
+        <section class="py-5">
             <div class="container">
-                <div class="row">
-                    <!-- Contact Form -->
-                    <div class="col-lg-7 mb-5 mb-lg-0" data-animate="slide-up">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8" data-animate="slide-up">
                         <div class="card bg-darker text-light">
                             <div class="card-body p-4 p-md-5">
-                                <h2 class="h3 mb-4">Send a Message</h2>
-                                
-                                <form id="contactForm">
-                                    <div class="mb-4">
-                                        <label for="name" class="form-label">Name</label>
-                                        <input type="text" class="form-control bg-black border-0 text-light" id="name" name="name" required>
-                                    </div>
-                                    
-                                    <div class="mb-4">
-                                        <label for="email" class="form-label">Email</label>
-                                        <input type="email" class="form-control bg-black border-0 text-light" id="email" name="email" required>
-                                    </div>
-                                    
-                                    <div class="mb-4">
-                                        <label for="message" class="form-label">Message</label>
-                                        <textarea class="form-control bg-black border-0 text-light" id="message" name="message" rows="5" required></textarea>
-                                    </div>
-                                    
-                                    <button type="submit" class="btn btn-primary w-100" id="submitButton">
-                                        <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true" id="loadingSpinner"></span>
-                                        <span id="submitText">Send Message</span>
-                                    </button>
-                                    
-                                    <div class="mt-3 d-none" id="successMessage">
-                                        <div class="alert alert-success">Your message has been sent successfully!</div>
-                                    </div>
-                                    
-                                    <div class="mt-3 d-none" id="errorMessage">
-                                        <div class="alert alert-danger">There was an error sending your message. Please try again.</div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Contact Info -->
-                    <div class="col-lg-5" data-animate="slide-up">
-                        <div class="card bg-darker text-light h-100">
-                            <div class="card-body p-4 p-md-5">
-                                <h2 class="h3 mb-4">Contact Info</h2>
-                                
+                                <h2 class="h3 mb-4">Contact Information</h2>
                                 <div class="d-flex mb-4">
-                                    <div class="me-3">
-                                        <i class="fas fa-envelope text-primary" style="font-size: 1.5rem;"></i>
-                                    </div>
+                                    <div class="me-3"><i class="fas fa-envelope text-primary" style="font-size: 1.5rem;"></i></div>
                                     <div>
                                         <h3 class="h5 mb-1">Email</h3>
-                                        <a href="mailto:houssemeddineds@gmail.com" class="text-light text-decoration-none">houssemeddineds@gmail.com</a>
+                                        <p class="mb-0">houssemeddineds@gmail.com</p>
                                     </div>
                                 </div>
-                                
                                 <div class="d-flex mb-4">
-                                    <div class="me-3">
-                                        <i class="fab fa-github text-primary" style="font-size: 1.5rem;"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="h5 mb-1">GitHub</h3>
-                                        <a href="https://github.com/HoussemDs" target="_blank" class="text-light text-decoration-none">github.com/HoussemDs</a>
-                                    </div>
-                                </div>
-                                
-                                <div class="d-flex mb-4">
-                                    <div class="me-3">
-                                        <i class="fab fa-linkedin text-primary" style="font-size: 1.5rem;"></i>
-                                    </div>
+                                    <div class="me-3"><i class="fab fa-linkedin text-primary" style="font-size: 1.5rem;"></i></div>
                                     <div>
                                         <h3 class="h5 mb-1">LinkedIn</h3>
                                         <a href="https://www.linkedin.com/in/houssemeddineds/" target="_blank" class="text-light text-decoration-none">linkedin.com/in/houssemeddineds</a>
                                     </div>
                                 </div>
-                                
-                                <div class="d-flex">
-                                    <div class="me-3">
-                                        <i class="fas fa-map-marker-alt text-primary" style="font-size: 1.5rem;"></i>
-                                    </div>
+                                <div class="d-flex mb-4">
+                                    <div class="me-3"><i class="fab fa-github text-primary" style="font-size: 1.5rem;"></i></div>
                                     <div>
-                                        <h3 class="h5 mb-1">Location</h3>
-                                        <p class="mb-0">El Menzah 6, Ariana, Tunisia</p>
+                                        <h3 class="h5 mb-1">GitHub</h3>
+                                        <a href="https://github.com/HoussemDs" target="_blank" class="text-light text-decoration-none">github.com/HoussemDs</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="me-3"><i class="fas fa-file-alt text-primary" style="font-size: 1.5rem;"></i></div>
+                                    <div>
+                                        <h3 class="h5 mb-1">Resume</h3>
+                                        <a href="static/HoussemEddineDs_MLEngineer_Resume.pdf" target="_blank" class="text-light text-decoration-none">View Resume</a>
                                     </div>
                                 </div>
                             </div>
@@ -264,44 +221,7 @@
             animateElements.forEach(element => {
                 observer.observe(element);
             });
-            
-            // Handle contact form submission
-            const contactForm = document.getElementById('contactForm');
-            const submitButton = document.getElementById('submitButton');
-            const loadingSpinner = document.getElementById('loadingSpinner');
-            const submitText = document.getElementById('submitText');
-            const successMessage = document.getElementById('successMessage');
-            const errorMessage = document.getElementById('errorMessage');
-            
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Show loading state
-                    loadingSpinner.classList.remove('d-none');
-                    submitText.textContent = 'Sending...';
-                    submitButton.disabled = true;
-                    
-                    // Simulate form submission (since we're using a static site)
-                    setTimeout(function() {
-                        // Hide loading state
-                        loadingSpinner.classList.add('d-none');
-                        submitText.textContent = 'Send Message';
-                        submitButton.disabled = false;
-                        
-                        // Show success message
-                        successMessage.classList.remove('d-none');
-                        
-                        // Reset form
-                        contactForm.reset();
-                        
-                        // Hide success message after 5 seconds
-                        setTimeout(function() {
-                            successMessage.classList.add('d-none');
-                        }, 5000);
-                    }, 1500);
-                });
-            }
+            // Contact form logic unified in main.js
         });
     </script>
 </body>

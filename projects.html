@@ -12,7 +12,7 @@
     <meta property="og:description" content="AI Engineer specializing in medical imaging, geospatial intelligence, and agentic AI. Experienced in building and deploying real-world systems with Python, PyTorch, MONAI, LangChain, and LangGraph.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
-    <meta property="og:image" content="static/img/profile.jpg">
+    <meta property="og:image" content="static/img/me/Profile_Picture.jpeg">
     
     <title>Projects - Houssem Eddine</title>
     
@@ -62,6 +62,15 @@
                         <a href="https://github.com/HoussemDs" target="_blank" class="nav-icon me-3"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/houssemeddineds/" target="_blank" class="nav-icon"><i class="fab fa-linkedin"></i></a>
                     </li>
+                    <li class="nav-item dropdown ms-lg-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="resumeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resume
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end bg-darker text-light" aria-labelledby="resumeDropdown">
+                            <li><a class="dropdown-item text-light" href="static/HoussemEddineDs_MLEngineer_Resume.pdf" target="_blank">View Resume</a></li>
+                            <li><a class="dropdown-item text-light" href="static/HoussemEddineDs_MLEngineer_Resume.pdf" download>Download Resume</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -88,10 +97,10 @@
                     <!-- Project 1 -->
                     <div class="col-lg-4 col-md-6 mb-4" data-animate="slide-up">
                         <div class="project-card h-100">
-                            <img src="static/img/project1.svg" alt="Satellite Image Segmentation" class="project-image">
+                            <img src="static/img/project1.png" alt="Satellite Image Segmentation" class="project-image">
                             <div class="p-4">
                                 <h3 class="h4 mb-3">Satellite Image Segmentation</h3>
-                                <p>Engineered a high-performance semantic segmentation model (U-Net, 92% IoU) for satellite and drone imagery, automating terrain classification and enabling smart logistics at CMA CGM. Used PyTorch and MONAI frameworks with advanced data augmentation techniques.</p>
+                                <p class="mb-2">Engineered a semantic segmentation system for satellite/drone imagery (U-Net, ~92% IoU). Built with PyTorch + MONAI and robust augmentation. Short overview below — expand to see details.</p>
                                 
                                 <div class="project-tags">
                                     <span class="project-tag">Geospatial AI</span>
@@ -101,7 +110,7 @@
                                     <span class="project-tag">Semantic Segmentation</span>
                                 </div>
                                 
-                                <div class="mt-4 d-flex gap-2">
+                                <div class="mt-3 d-flex gap-2">
                                     <a href="https://github.com/celiamarrakchi/wheat_AI_Project" target="_blank" class="btn btn-sm btn-outline-primary">
                                         <i class="fab fa-github me-1"></i> GitHub
                                     </a>
@@ -109,31 +118,63 @@
                                     <a href="https://www.linkedin.com/feed/update/urn:li:activity:7330128835335663617" target="_blank" class="btn btn-sm btn-outline-primary">
                                         <i class="fas fa-external-link-alt me-1"></i> Demo
                                     </a>
+                                    <button class="btn btn-sm btn-primary ms-auto" data-bs-toggle="collapse" data-bs-target="#project1Details" aria-expanded="false" aria-controls="project1Details">Show More</button>
+                                </div>
+                                <div id="project1Details" class="collapse project-details mt-3">
+                                    <div class="p-3">
+                                        <ul class="nav nav-tabs" id="project1Tabs" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="p1-mywork-tab" data-bs-toggle="tab" data-bs-target="#p1-mywork" type="button" role="tab" aria-controls="p1-mywork" aria-selected="true">My Work</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="p1-teamwork-tab" data-bs-toggle="tab" data-bs-target="#p1-teamwork" type="button" role="tab" aria-controls="p1-teamwork" aria-selected="false">Team Work</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="p1-linkedin-tab" data-bs-toggle="tab" data-bs-target="#p1-linkedin" type="button" role="tab" aria-controls="p1-linkedin" aria-selected="false">LinkedIn Summary</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content p-3 bg-darker border border-1 border-opacity-25 rounded-bottom" id="project1TabsContent">
+                                            <div class="tab-pane fade show active" id="p1-mywork" role="tabpanel" aria-labelledby="p1-mywork-tab">
+                                                Led data pipeline and training: curated geospatial dataset, implemented augmentation, and optimized U-Net training in PyTorch/MONAI. Wrote core training/evaluation code and metrics reporting.
+                                            </div>
+                                            <div class="tab-pane fade" id="p1-teamwork" role="tabpanel" aria-labelledby="p1-teamwork-tab">
+                                                Collaborated on labeling, model design reviews, and deployment considerations. Integrated team feedback on edge cases and improved class balance and post-processing.
+                                            </div>
+                                            <div class="tab-pane fade" id="p1-linkedin" role="tabpanel" aria-labelledby="p1-linkedin-tab">
+                                                Shared a public summary highlighting impact on logistics and terrain automation using segmentation; see linked post for visuals and outcomes.
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Project 2 -->
+                    <!-- Project 2: Heart Segmentation (Video Demo) -->
                     <div class="col-lg-4 col-md-6 mb-4" data-animate="slide-up">
-                        <div class="project-card h-100">
-                            <img src="static/img/project2.svg" alt="Multi-Agent Doctor Assistant" class="project-image">
+                        <div class="project-card alt h-100">
+                            <img src="static/img/project2.jpg" alt="Heart Segmentation" class="project-image">
                             <div class="p-4">
-                                <h3 class="h4 mb-3">Multi-Agent Doctor Assistant</h3>
-                                <p>Developed an intelligent multi-agent system for patient triage and medical support. Built with LangChain and CrewAI, integrating diagnostic logic for multiple patient categories.</p>
+                                <h3 class="h4 mb-3">Heart Segmentation (Medical Imaging)</h3>
+                                <p class="mb-2">3D heart structure segmentation using MONAI + PyTorch. Brief overview here — expand to watch a short demo video.</p>
                                 
                                 <div class="project-tags">
-                                    <span class="project-tag">LangChain</span>
-                                    <span class="project-tag">CrewAI</span>
-                                    <span class="project-tag">Medical AI</span>
-                                    <span class="project-tag">Multi-Agent Systems</span>
-                                    <span class="project-tag">LLMs</span>
+                                    <span class="project-tag">Medical Imaging</span>
+                                    <span class="project-tag">PyTorch</span>
+                                    <span class="project-tag">MONAI</span>
+                                    <span class="project-tag">3D Segmentation</span>
                                 </div>
                                 
-                                <div class="mt-4 d-flex gap-2">
-                                    <a href="https://github.com/HoussemDs/Multi_Agent_doctor_Assitant" target="_blank" class="btn btn-sm btn-outline-primary">
-                                        <i class="fab fa-github me-1"></i> GitHub
-                                    </a>
+                                <div class="mt-3 d-flex gap-2">
+                                    <button class="btn btn-sm btn-primary ms-auto" data-bs-toggle="collapse" data-bs-target="#project2Details" aria-expanded="false" aria-controls="project2Details">Show More</button>
+                                </div>
+                                <div id="project2Details" class="collapse project-details mt-3">
+                                    <div class="p-3">
+                                        <p class="mb-3">The demo shows segmentation masks overlaid on cardiac MRI slices. The pipeline includes preprocessing, model inference, and visualization.</p>
+                                        <div class="video-container">
+                                            <video controls preload="none" poster="static/img/project2.jpg" data-src="static/img/demo%20output%20of%20the%20heart%20segmentation.mp4"></video>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -159,6 +200,35 @@
                                     <a href="https://github.com/HoussemDs" target="_blank" class="btn btn-sm btn-outline-primary">
                                         <i class="fab fa-github me-1"></i> GitHub
                                     </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: People Counting (YOLOv8 + SORT) -->
+                    <div class="col-lg-4 col-md-6 mb-4" data-animate="slide-up">
+                        <div class="project-card alt h-100">
+                            <img src="static/img/Project4.png" alt="People Counting System" class="project-image">
+                            <div class="p-4">
+                                <h3 class="h4 mb-3">People Counting System (YOLOv8 + SORT)</h3>
+                                <p class="mb-2">Real-time entry/exit counting with YOLOv8 detection and SORT tracking. Logs net occupancy for the 1st floor and visualizes time-series data.</p>
+                                <div class="project-tags">
+                                    <span class="project-tag">YOLOv8</span>
+                                    <span class="project-tag">SORT</span>
+                                    <span class="project-tag">Computer Vision</span>
+                                    <span class="project-tag">Time Series</span>
+                                </div>
+                                <div class="mt-3 d-flex gap-2">
+                                    <a href="https://github.com/HoussemDs/floor-occupancy-tracker" target="_blank" class="btn btn-sm btn-outline-primary">
+                                        <i class="fab fa-github me-1"></i> GitHub
+                                    </a>
+                                    <button class="btn btn-sm btn-primary ms-auto" data-bs-toggle="collapse" data-bs-target="#project4Details" aria-expanded="false" aria-controls="project4Details">Show More</button>
+                                </div>
+                                <div id="project4Details" class="collapse project-details mt-3">
+                                    <div class="p-3">
+                                        <div class="chart-preview mb-3"></div>
+                                        <p class="mb-2">Animated preview simulates the occupancy line chart. The system aggregates counts every few seconds and updates the visualization.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

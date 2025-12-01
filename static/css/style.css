@@ -277,6 +277,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2rem;
 }
 
+.profile-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+
 .profile-image:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
@@ -293,6 +300,10 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+}
+
+.project-card.alt {
+    border-color: rgba(157, 78, 221, 0.2);
 }
 
 .project-card::before {
@@ -440,6 +451,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.5rem;
 }
 
+.form-control.bg-black {
+    background-color: var(--darker) !important;
+    border-color: rgba(0, 255, 255, 0.2) !important;
+}
+
 .form-control:focus {
     background-color: rgba(255, 255, 255, 0.05);
     border-color: var(--primary);
@@ -505,6 +521,61 @@ footer {
     color: var(--primary) !important;
     transform: translateY(-3px);
     text-shadow: var(--glow);
+}
+
+/* Dropdown menu styling for Resume */
+.dropdown-menu {
+    background-color: var(--darker);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    color: var(--light);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.dropdown-item {
+    color: var(--light);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--primary);
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: rgba(0, 255, 255, 0.12);
+    color: var(--light);
+}
+
+/* Dark card utility for consistent theme */
+.bg-darker {
+    background-color: var(--darker) !important;
+}
+
+.card.bg-darker {
+    border: 1px solid rgba(0, 255, 255, 0.12);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+}
+
+.card.bg-darker .card-body {
+    padding: 2rem;
+}
+
+/* Theater mode for expanded project */
+.project-card.theater-expanded {
+    max-width: 1100px;
+    margin: 0 auto 2rem;
+    box-shadow: var(--glow);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    transform: scale(1.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, max-width 0.3s ease;
+}
+
+.project-card.theater-expanded .project-image {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
 }
 
 /* Gradient text */
@@ -606,6 +677,63 @@ footer {
 [data-animate="scale-in"] {
     opacity: 0;
     transform: scale(0.8);
+}
+
+/* Responsive video container */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Project details collapse styling */
+.project-details {
+    background-color: rgba(5, 5, 16, 0.6);
+    border-top: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.project-details.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Simple animated chart preview */
+.chart-preview {
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(90deg, rgba(0,255,255,0.1), rgba(157,78,221,0.1));
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.chart-preview::after {
+    content: '';
+    position: absolute;
+    left: -40%;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+    animation: shimmer 2.5s infinite;
+}
+
+@keyframes shimmer {
+    0% { left: -40%; }
+    100% { left: 100%; }
 }
 
 /* Responsive adjustments */

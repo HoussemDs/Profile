@@ -100,75 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Contact form submission
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                message: document.getElementById('message').value
-            };
-            
-            // Show loading state
-            const submitBtn = document.getElementById('submitButton');
-            const loadingSpinner = document.getElementById('loadingSpinner');
-            const submitText = document.getElementById('submitText');
-            
-            submitBtn.disabled = true;
-            loadingSpinner.classList.remove('d-none');
-            submitText.textContent = 'Sending...';
-            
-            // Send form data to the API endpoint
-            fetch('/api/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formData)
-            })
-            .then(response => response.json())
-            .then(data => {
-                // Reset form
-                contactForm.reset();
-                
-                // Show success message
-                const successMessage = document.getElementById('successMessage');
-                successMessage.classList.remove('d-none');
-                
-                // Hide success message after 5 seconds
-                setTimeout(() => {
-                    successMessage.classList.add('d-none');
-                }, 5000);
-                
-                // Reset button
-                submitBtn.disabled = false;
-                loadingSpinner.classList.add('d-none');
-                submitText.textContent = 'Send Message';
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                
-                // Show error message
-                const errorMessage = document.getElementById('errorMessage');
-                const errorText = document.getElementById('errorText');
-                errorText.textContent = 'An error occurred. Please try again later.';
-                errorMessage.classList.remove('d-none');
-                
-                // Hide error message after 5 seconds
-                setTimeout(() => {
-                    errorMessage.classList.add('d-none');
-                }, 5000);
-                
-                // Reset button
-                submitBtn.disabled = false;
-                loadingSpinner.classList.add('d-none');
-                submitText.textContent = 'Send Message';
-            });
-        });
-    }
+    // No contact form submission logic
 
     // Animate elements when they come into view
     const animateOnScroll = function() {
@@ -189,4 +121,33 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Run on scroll
     window.addEventListener('scroll', animateOnScroll);
+
+    // Simple expand/collapse for each project details (toggle only the clicked one)
+    const projectDetails = document.querySelectorAll('.collapse.project-details');
+    projectDetails.forEach(details => {
+        details.addEventListener('show.bs.collapse', function() {
+            const video = details.querySelector('video[data-src]');
+            if (video && !video.getAttribute('src')) {
+                const src = video.getAttribute('data-src');
+                video.setAttribute('src', src);
+                video.load();
+            }
+            const card = details.closest('.project-card');
+            const btn = card ? card.querySelector('[data-bs-target="#' + details.id + '"]') : null;
+            if (btn) {
+                btn.textContent = 'Show Less';
+            }
+        });
+        details.addEventListener('hide.bs.collapse', function() {
+            const card = details.closest('.project-card');
+            const btn = card ? card.querySelector('[data-bs-target="#' + details.id + '"]') : null;
+            if (btn) {
+                btn.textContent = 'Show More';
+            }
+        });
+    });
+
+    // Auto-expand behavior removed to keep navigation simple
+
+    // No contact form logic — page uses static contact info
 });

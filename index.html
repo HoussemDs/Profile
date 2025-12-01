@@ -12,7 +12,7 @@
     <meta property="og:description" content="AI Engineer specializing in medical imaging, geospatial intelligence, and agentic AI. Experienced in building and deploying real-world systems with Python, PyTorch, MONAI, LangChain, and LangGraph. Proven track record in developing 3D segmentation pipelines, AI-driven diagnostics, and intelligent automation across healthcare and enterprise applications.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
-    <meta property="og:image" content="static/img/profile.jpg">
+    <meta property="og:image" content="static/img/me/Profile_Picture.jpeg">
     
     <title>Houssem Eddine - AI Engineer | Data Scientist</title>
     
@@ -78,6 +78,15 @@
                         <a href="https://github.com/HoussemDs" target="_blank" class="nav-icon me-3"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/houssemeddineds/" target="_blank" class="nav-icon"><i class="fab fa-linkedin"></i></a>
                     </li>
+                    <li class="nav-item dropdown ms-lg-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="resumeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resume
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end bg-darker text-light" aria-labelledby="resumeDropdown">
+                            <li><a class="dropdown-item text-light" href="static/HoussemEddineDs_MLEngineer_Resume.pdf" target="_blank">View Resume</a></li>
+                            <li><a class="dropdown-item text-light" href="static/HoussemEddineDs_MLEngineer_Resume.pdf" download>Download Resume</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -87,10 +96,14 @@
     <main>
         <!-- Hero Section with Particles Background -->
         <section class="hero">
-            <div id="particles-js"></div>
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 hero-content" data-animate="fade-in">
+                        <div class="d-block d-lg-none text-center mb-4">
+                            <div class="profile-image mx-auto">
+                                <img src="static/img/me/Profile_Picture.jpeg" alt="Houssem Eddine - AI Engineer | Data Scientist" class="img-fluid">
+                            </div>
+                        </div>
                         <h1 class="hero-title mb-4" data-animate="slide-up">
                             Hi, I'm <span class="text-gradient">Houssem Eddine</span>
                         </h1>
@@ -103,11 +116,12 @@
                         <div class="d-flex gap-3" data-animate="slide-up">
                             <a href="projects.html" class="btn btn-primary">View Projects</a>
                             <a href="contact.html" class="btn btn-outline-primary">Get in Touch</a>
+                            <a href="static/HoussemEddineDs_MLEngineer_Resume.pdf" target="_blank" class="btn btn-outline-primary">View Resume</a>
                         </div>
                     </div>
                     <div class="col-lg-6 d-none d-lg-block text-center" data-animate="slide-left">
                         <div class="profile-image mx-auto">
-                            <img src="static/img/profile.svg" alt="Houssem Eddine - AI Engineer | Data Scientist" class="img-fluid">
+                            <img src="static/img/me/Profile_Picture.jpeg" alt="Houssem Eddine - AI Engineer | Data Scientist" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -123,6 +137,10 @@
                         <p class="lead mb-4" data-animate="fade-in">
                             AI Engineer specializing in medical imaging, geospatial intelligence, and agentic AI. Experienced in building and deploying real-world systems with Python, PyTorch, MONAI, LangChain, and LangGraph. Proven track record in developing 3D segmentation pipelines, AI-driven diagnostics, and intelligent automation across healthcare and enterprise applications.
                         </p>
+                        <div class="mb-4" data-animate="fade-in">
+                            <a href="static/HoussemEddineDs_MLEngineer_Resume.pdf" target="_blank" class="btn btn-primary me-2">View Resume</a>
+                            <a href="static/HoussemEddineDs_MLEngineer_Resume.pdf" download class="btn btn-outline-primary">Download Resume</a>
+                        </div>
                         <div class="row mt-5">
                             <div class="col-md-4 mb-4" data-animate="scale-in">
                                 <div class="p-4 bg-black rounded-3 h-100">
@@ -212,58 +230,6 @@
             </div>
         </section>
 
-        <!-- Featured Projects Section -->
-        <section class="py-5">
-            <div class="container">
-                <div class="row justify-content-center mb-5">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="mb-4" data-animate="fade-in">Featured <span class="text-gradient">Projects</span></h2>
-                        <p class="lead mb-5" data-animate="fade-in">Check out some of my recent work</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- Project 1 -->
-                    <div class="col-lg-6 mb-4" data-animate="slide-up">
-                        <div class="project-card">
-                            <img src="static/img/project1.svg" alt="Satellite Image Segmentation" class="project-image">
-                            <div class="p-4">
-                                <h3 class="h4 mb-3">Satellite Image Segmentation</h3>
-                                <p>Engineered a high-performance semantic segmentation model (U-Net, 92% IoU) for satellite and drone imagery, automating terrain classification and enabling smart logistics at CMA CGM...</p>
-                                <div class="project-tags">
-                                    <span class="project-tag">Geospatial AI</span>
-                                    <span class="project-tag">PyTorch</span>
-                                    <span class="project-tag">MONAI</span>
-                                </div>
-                                <div class="mt-4">
-                                    <a href="projects.html" class="btn btn-sm btn-outline-primary">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Project 2 -->
-                    <div class="col-lg-6 mb-4" data-animate="slide-up">
-                        <div class="project-card">
-                            <img src="static/img/project2.svg" alt="Multi-Agent Doctor Assistant" class="project-image">
-                            <div class="p-4">
-                                <h3 class="h4 mb-3">Multi-Agent Doctor Assistant</h3>
-                                <p>Developed an intelligent multi-agent system for patient triage and medical support. Built with LangChain and CrewAI, integrating diagnostic logic for multiple patient categories...</p>
-                                <div class="project-tags">
-                                    <span class="project-tag">LangChain</span>
-                                    <span class="project-tag">CrewAI</span>
-                                    <span class="project-tag">Medical AI</span>
-                                </div>
-                                <div class="mt-4">
-                                    <a href="projects.html" class="btn btn-sm btn-outline-primary">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-4" data-animate="fade-in">
-                    <a href="projects.html" class="btn btn-primary">View All Projects</a>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
@@ -279,6 +245,8 @@
                         <a href="https://github.com/HoussemDs" target="_blank" class="text-light me-3"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/houssemeddineds/" target="_blank" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
                         <a href="mailto:houssemeddineds@gmail.com" class="text-light"><i class="fas fa-envelope"></i></a>
+                        <a href="static/HoussemEddineDs_MLEngineer_Resume.pdf" target="_blank" class="text-light ms-3">View Resume</a>
+                        <a href="static/HoussemEddineDs_MLEngineer_Resume.pdf" download class="text-light ms-3">Download Resume</a>
                     </div>
                 </div>
             </div>
